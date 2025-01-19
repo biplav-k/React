@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Reaction Wall</title>
+</head>
+<body>
+  <h1>Reaction Wall</h1>
+  <div id="game-container">
+    <div class="panel"></div>
+    <div class="panel"></div>
+    <div class="panel"></div>
+    <div class="panel"></div>
+    <div class="panel"></div>
+    <div class="panel"></div>
+    <div class="panel"></div>
+    <div class="panel"></div>
+    <div class="panel"></div>
+  </div>
+  <p>Time Left: <span id="time-left">60</span> seconds</p>
+  <p>Score: <span id="score">0</span></p>
+  <button id="start-game">Start Game</button>
+
+  <!-- Result Modal -->
+  <div id="result-modal" class="modal">
+    <div class="modal-content">
+      <h2>Game Over</h2>
+      <p>Fastest Reaction Time: <span id="fastest-time">0</span> ms</p>
+      <p>Slowest Reaction Time: <span id="slowest-time">0</span> ms</p>
+      <p>Average Reaction Time: <span id="average-time">0</span> ms</p>
+      <button id="close-modal">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
